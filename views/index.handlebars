@@ -1,34 +1,47 @@
-<h1>Eat-Da-Burger!</h1>
 
-<ol class="burger__list">
-  {{#each burgers}}
-    {{#unless devoured}}
-      <li class="burger__item">
-        <p>{{burger_name}}</p>
-        <button class="burger__button--devour" data-id="{{this.id}}">Devour It!</button>
-      </li>
-    {{/unless}}
-  {{/each}}
-</ol>
-
-<ol class="devoured__list">
-  {{#each burgers}}
-    {{#if devoured}}
-      <li class="burger__item">
-        <p>{{burger_name}}</p>
-      </li>
-    {{/if}}
-  {{/each}}
-</ol>
-
-<h2>Add a Burger</h2>
-
-<form id="create-form" class="burger__form">
-
-  <div class="form-group">
-    <label for="ca">Enter Burger Name:</label>
-    <input type="text" id="burger" name="name">
+<section class="burgers__added">
+  <div class="burger__container">
+      <h2 class="heading-2">
+      Burgers to Devour
+    </h2>
+    <ol class="burger__list">
+      {{#each burgers}}
+        {{#unless devoured}}
+          <li class="burger__item">
+            <p>{{burger_name}}</p>
+            <button class="burger__button--devour" data-id="{{this.id}}">Devour It!</button>
+          </li>
+        {{/unless}}
+      {{/each}}
+    </ol>
   </div>
 
-  <button type="submit">Submit</button>
-</form>
+  <div class="burger__container">
+    <h2 class="heading-2">
+      Devoured Burgers
+    </h2>
+    <ol class="burger__list">
+      {{#each burgers}}
+        {{#if devoured}}
+          <li class="burger__item devoured__item">
+            <p>{{burger_name}}</p>
+          </li>
+        {{/if}}
+      {{/each}}
+    </ol>
+  </div>
+</section>
+
+<section class="form__section">
+  <h2 class="heading-2">Add a Burger</h2>
+
+  <form id="create-form" class="burger__form">
+
+    <div class="form-group">
+      <label for="burger">Enter Burger Name:</label>
+      <input type="text" id="burger" name="name">
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
