@@ -1,12 +1,12 @@
 
-<section class="burgers container">
-	<div class="row">
+<section class="burgers container spacer">
+	<div class="row spacer">
 		<div class="burgers--added">
-			<div class="burgers__container">
+			<div class="burgers__container spacer">
 				<h2 class="heading-2">
 					Burgers to Devour
 				</h2>
-				<ol class="burgers__list">
+				<ol class="burgers__list spacer--tight">
 					{{#each burgers}}
 						{{#unless devoured}}
 						<li class="burgers__item">
@@ -17,11 +17,11 @@
 					{{/each}}
 				</ol>
 			</div>
-			<div class="burgers__container">
+			<div class="burgers__container spacer">
 				<h2 class="heading-2">
 					Devoured Burgers
 				</h2>
-				<ol class="burgers__list">
+				<ol class="burgers__list spacer--tight">
 					{{#each burgers}}
 						{{#if devoured}}
 						<li class="burgers__item burgers__item--devoured">
@@ -35,12 +35,12 @@
 	</div>
 </section>
 
-<section class="form__section container">
-	<div class="row">
+<section class="form__section container spacer">
+	<div class="row spacer">
 		<h2 class="heading-2">Add a Burger</h2>
 		<p>Type in the name of your favorite burger. Hit the button to add it to the list!</p>
-		<form id="create-form" class="burger__form">
-			<div class="form-group">
+		<form id="create-form" class="burger__form spacer">
+			<div class="form-group spacer">
 				<label for="burger">Enter Burger Name:</label>
 				<input type="text" id="burger" name="name">
 			</div>

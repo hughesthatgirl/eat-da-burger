@@ -67,6 +67,26 @@ body * {
 
 body {
 	background-color: #ffcb68;
+	text-align: center;
+}
+
+/*
+// ------------------------------------------
+// LAYOUT
+// ------------------------------------------
+*/
+
+.spacer > * + * {
+	margin-top: 30px;
+}
+
+.spacer > h1 + *,
+.spacer > h2 + * {
+	margin-top: 15px;
+}
+
+.spacer--tight > * + * {
+	margin-top: 15px;
 }
 
 .container {
@@ -89,19 +109,32 @@ body {
 	}
 }
 
+/*
+// ------------------------------------------
+// HEADINGS
+// ------------------------------------------
+*/
+
 .heading-1 {
 	color: #D43F22;
 	font-size: 3rem;
+	font-weight: bold;
 }
 
 .heading-2 {
 	font-size: 2rem;
 }
 
+/*
+// ------------------------------------------
+// BUTTONS
+// ------------------------------------------
+*/
+
 .button {
 	padding: 15px 7px;
 	text-align: center;
-	font-size: 0.75rem;
+	font-weight: bold;
 	color: #fff;
 	background-color: #23350e;
 	border: 1px solid transparent;
