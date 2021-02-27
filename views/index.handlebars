@@ -1,47 +1,50 @@
 
-<section class="burgers__added">
-  <div class="burger__container">
-      <h2 class="heading-2">
-      Burgers to Devour
-    </h2>
-    <ol class="burger__list">
-      {{#each burgers}}
-        {{#unless devoured}}
-          <li class="burger__item">
-            <p>{{burger_name}}</p>
-            <button class="burger__button--devour" data-id="{{this.id}}">Devour It!</button>
-          </li>
-        {{/unless}}
-      {{/each}}
-    </ol>
-  </div>
-
-  <div class="burger__container">
-    <h2 class="heading-2">
-      Devoured Burgers
-    </h2>
-    <ol class="burger__list">
-      {{#each burgers}}
-        {{#if devoured}}
-          <li class="burger__item devoured__item">
-            <p>{{burger_name}}</p>
-          </li>
-        {{/if}}
-      {{/each}}
-    </ol>
-  </div>
+<section class="burgers container">
+	<div class="row">
+		<div class="burgers--added">
+			<div class="burgers__container">
+				<h2 class="heading-2">
+					Burgers to Devour
+				</h2>
+				<ol class="burgers__list">
+					{{#each burgers}}
+						{{#unless devoured}}
+						<li class="burgers__item">
+							<p>{{burger_name}}</p>
+							<button class="button burgers__button--devour" data-id="{{this.id}}">Devour It!</button>
+						</li>
+						{{/unless}}
+					{{/each}}
+				</ol>
+			</div>
+			<div class="burgers__container">
+				<h2 class="heading-2">
+					Devoured Burgers
+				</h2>
+				<ol class="burgers__list">
+					{{#each burgers}}
+						{{#if devoured}}
+						<li class="burgers__item burgers__item--devoured">
+							<p>{{burger_name}}</p>
+						</li>
+						{{/if}}
+					{{/each}}
+				</ol>
+			</div>
+		</div>
+	</div>
 </section>
 
-<section class="form__section">
-  <h2 class="heading-2">Add a Burger</h2>
-
-  <form id="create-form" class="burger__form">
-
-    <div class="form-group">
-      <label for="burger">Enter Burger Name:</label>
-      <input type="text" id="burger" name="name">
-    </div>
-
-    <button type="submit">Submit</button>
-  </form>
+<section class="form__section container">
+	<div class="row">
+		<h2 class="heading-2">Add a Burger</h2>
+		<p>Type in the name of your favorite burger. Hit the button to add it to the list!</p>
+		<form id="create-form" class="burger__form">
+			<div class="form-group">
+				<label for="burger">Enter Burger Name:</label>
+				<input type="text" id="burger" name="name">
+			</div>
+			<button type="submit" class="button">Add Da Burger</button>
+		</form>
+	</div>
 </section>
