@@ -16,12 +16,11 @@ router.get('/', (req, res) => {
   });
 });
 
-// router.post('/api/cats', (req, res) => {
-//   cat.create(['name', 'sleepy'], [req.body.name, req.body.sleepy], (result) => {
-//     // Send back the ID of the new quote
-//     res.json({ id: result.insertId });
-//   });
-// });
+router.post('/', (req, res) => {
+  burger.create(['burger_name', 'devoured'], [req.body.burger_name, req.body.devoured], (result) => {
+    res.json({ id: result.insertId });
+  });
+});
 
 // router.put('/api/cats/:id', (req, res) => {
 //   const condition = `id = ${req.params.id}`;
@@ -43,7 +42,7 @@ router.get('/', (req, res) => {
 //   );
 // });
 
-// router.delete('/api/cats/:id', (req, res) => {
+// router.delete('/', (req, res) => {
 //   const condition = `id = ${req.params.id}`;
 
 //   cat.delete(condition, (result) => {
@@ -55,5 +54,4 @@ router.get('/', (req, res) => {
 //   });
 // });
 
-// Export routes for server.js to use.
 module.exports = router;
