@@ -60,12 +60,12 @@ table {
 
 body * {
 	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1em;
-	color: #332814;
 }
 
 body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #541f08;
 	background-color: #ffcb68;
 	text-align: center;
 }
@@ -109,6 +109,11 @@ body {
 	}
 }
 
+.footer {
+	background-color: #541f08;
+	color: #fff;
+}
+
 /*
 // ------------------------------------------
 // HEADINGS
@@ -116,7 +121,7 @@ body {
 */
 
 .heading-1 {
-	color: #D43F22;
+	color: #da4322;
 	font-size: 3rem;
 	font-weight: bold;
 }
@@ -136,7 +141,7 @@ body {
 	text-align: center;
 	font-weight: bold;
 	color: #fff;
-	background-color: #23350e;
+	background-color: #688125;
 	border: 1px solid transparent;
 	transition: all ease-out 0.2s;
 }
@@ -144,5 +149,5 @@ body {
 .button:hover,
 .button:active
 .button:focus{
-	background-color: #1F2F0C;
+	background-color: #96bc2c;
 }
