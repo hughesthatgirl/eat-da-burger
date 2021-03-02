@@ -23,8 +23,8 @@
 					{{#each burgers}}
 						{{#unless devoured}}
 						<li class="burgers__item spacer--tight">
-							<p>{{burger_name}}</p>
-							<button class="button burgers__button--devour" data-id="{{this.id}}">Devour It!</button>
+							<p class="burgers__item--name">{{burger_name}}</p>
+							<button class="button burgers__item--btn" data-id="{{this.id}}">Devour It!</button>
 						</li>
 						{{/unless}}
 					{{/each}}
