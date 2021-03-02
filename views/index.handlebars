@@ -5,7 +5,7 @@
 		<form id="create-form" class="burger__form spacer--tight">
 			<div class="form-group spacer--tight">
 				<label for="burger">Enter Burger Name:</label>
-				<input type="text" id="burger" name="name">
+				<input type="text" id="burger" class="burgers__input" name="name">
 			</div>
 			<button type="submit" class="button">Add Da Burger</button>
 		</form>
@@ -22,7 +22,7 @@
 				<ol class="burgers__list spacer--tight">
 					{{#each burgers}}
 						{{#unless devoured}}
-						<li class="burgers__item">
+						<li class="burgers__item spacer--tight">
 							<p>{{burger_name}}</p>
 							<button class="button burgers__button--devour" data-id="{{this.id}}">Devour It!</button>
 						</li>

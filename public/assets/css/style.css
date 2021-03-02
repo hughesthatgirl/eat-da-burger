@@ -116,6 +116,30 @@ body {
 
 /*
 // ------------------------------------------
+// BURGERS SECTION
+// ------------------------------------------
+*/
+
+.burgers--added {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.burgers__container {
+	min-width: 100px;
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+.burgers__input {
+	display: block;
+	height: 100px;
+}
+
+/*
+// ------------------------------------------
 // HEADINGS
 // ------------------------------------------
 */
